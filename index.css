@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.form__wrap {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.form__title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.form__title ::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    left: 0;
+    bottom: 0;
+    background: #9b59b6;
+}
+
+.form__datails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.form__input-box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+input {
+    height: 45px;
+    width: 100%;
+    outline-color: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+
+input:valid {
+    border-color: #9b59b6;
+}
+
+.form__input-text {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form__gender-datils {
+
+}
+
+.form__gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form__gender-category {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 14px 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+.form__gender-dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #d9d9d9;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked ~ .form__gender-dot label {
+    border-color: #d9d9d9;
+    background: #9b59b9;
+}
